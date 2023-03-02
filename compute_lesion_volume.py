@@ -181,7 +181,7 @@ def process_cases(root_dir, nifti_path, num_fold = 5):
 if "__main__" == __name__:     
     root_dir =  "/UserData/Lymphoma_UW_Retrospective/Data/uw_analyzed/dicom/"
     nifti_path = '/UserData/Lymphoma_UW_Retrospective/Data/uw_analyzed/Xin/nifti/voxel/'
-    process_cases(root_dir, nifti_path, num_fold=2)
+    process_cases(root_dir, nifti_path, num_fold=5)
     data = pd.read_excel('./data/UW_data_with_Hodgkin_DLBCL_labels.xlsx') 
     filename = data.Filenames.tolist()
     Disease = data.Disease.tolist() 
